@@ -1,105 +1,110 @@
-# Hola, soy Fernando González Rebollo
+🇬🇧 English | [🇪🇸 Español](README_ES.md)
 
-Frontend Developer en crecimiento, con formación en **Desarrollo de Aplicaciones Web (DAW)** y experiencia real en **optimización web, CRO y desarrollo frontend**.
+# Hi, I'm Fernando González Rebollo
 
-Vengo del marketing digital, y eso marca mi forma de trabajar: pienso en **usuario, contexto y utilidad real**, no solo en escribir código.
+Frontend Developer in growth, with a background in **Web Application Development (DAW)** and real experience in **frontend development, CRO, and web optimization**.
 
----
-
-## Cómo trabajo
-
-- Prefiero entender el problema antes de picar código
-- Me interesa que lo que hago **se use**, no solo que “funcione”
-- Valoro la claridad, el rendimiento y la experiencia de usuario
-- No vendo lo que aún estoy aprendiendo
+I come from digital marketing, and that clearly shapes how I work: I focus on **user context, usefulness, performance, and conversion**, not just on writing code that “works”.
 
 ---
 
-## Experiencia actual
+## How I work
 
-### HarryPotterHead — Colaborador en desarrollo y mantenimiento web  
-**Actualidad**
-
-Colaboro en una plataforma en producción basada en **PHP y SMF**:
-
-- Corrección de errores y soporte técnico
-- Mejoras funcionales y pequeños ajustes frontend
-- Mantenimiento continuo sobre una web con usuarios reales
+- I like to understand the problem before writing code
+- I care about building things that are actually used
+- I value clarity, performance, and user experience
+- I don’t oversell skills I’m still learning
 
 ---
 
-### metestats — Web app de meteorología (proyecto en desarrollo)
-**Actualidad | Repo privado**
+## Current experience
 
-Aplicación web que transforma datos meteorológicos en **recomendaciones prácticas de vestimenta**.
+### HarryPotterHead — Web development & maintenance collaborator  
+**Present**
 
-- Desarrollo del **frontend con Angular**
-- Consumo de datos procesados desde un backend en **Python**
-- Trabajo coordinado con [Elicupra](https://github.com/Elicupra) (separación frontend / backend)
-- Enfoque en lógica de interfaz, experiencia de usuario y claridad de la información
+I collaborate on a production platform based on **PHP and SMF**, working on:
 
-Proyecto actualmente en **fase final de desarrollo (casi MVP)**. Pendiente de despliegue.
+- Bug fixing and technical support
+- Functional improvements and small frontend enhancements
+- Continuous maintenance on a live website with real users
 
 ---
 
-## Experiencia previa
+### metestats — Weather-based web app (in development)  
+**Present | Private repository**
 
-### Accenture — Soporte en Conversion Rate Optimization (CRO)  
+Web application that turns weather data into **practical clothing recommendations**.
+
+- Frontend development using **Angular**
+- Consumption of data processed by a **Python backend**
+- Coordinated work with another developer, with clear frontend / backend separation
+- Focus on UI logic, usability, and clarity of information
+
+Backend and data processing are handled by  
+[Elicupra](https://github.com/Elicupra) (Python).
+
+Project currently in **late development stage (near MVP)**. Deployment pending.
+
+---
+
+## Previous experience
+
+### Accenture — Conversion Rate Optimization (CRO) Support  
 **Mar 2025 – Jun 2025**
 
-- Implementación de mejoras frontend y tests A/B
-- Uso de **JavaScript, jQuery y Shadow DOM**
-- Optimización de UX y conversión
-- Trabajo en entorno corporativo con equipos multidisciplinares
-- Adaptación y depuración en desktop, mobile y tablet
+- Implementation of frontend improvements and A/B testing
+- Use of **JavaScript, jQuery, and Shadow DOM**
+- UX and conversion optimization
+- Collaboration with multidisciplinary teams in a corporate environment
+- Debugging and adapting interfaces for desktop, mobile, and tablet
 
 ---
 
-### Proyectos web personales  
-**2019 – 2024**
+### Personal web projects  
+**2022 – 2024**
 
-Desarrollo y optimización de sitios web propios, con foco en SEO, rendimiento y experiencia de usuario:
+Development and optimization of personal websites, focused on SEO, performance, and user experience:
 
-- **papelpintadoflores.com** — web de afiliación optimizada para SEO
-- **davidmartinezpsicologia.com** — web corporativa orientada a captación
-- **latorredeoro.com** — plataforma online para administración de loterías
+- **papelpintadoflores.com** — SEO-optimized affiliate website
+- **davidmartinezpsicologia.com** — corporate website focused on lead generation
+- **latorredeoro.com** — online platform for lottery administration
 
 ---
 
-## Tecnologías
+## Technologies
 
 **Frontend**
 - HTML5, CSS3, JavaScript (ES6+)
-- Angular (uso activo)
+- Angular (active use)
 - React
 
-**Backend / Web**
-- PHP (entorno SMF)
+**Web / CMS**
+- PHP (SMF environment)
 - WordPress, Elementor
 
-**CRO & Analítica**
+**CRO & Analytics**
 - Adobe Target
 - Google Analytics
 - Google Search Console
 - Yoast SEO
 
-**Otros**
+**Other**
 - Git & GitHub
-- Trabajo en equipo
-- Metodologías ágiles
+- Team collaboration
+- Agile environments
 
 ---
 
-## Qué busco
+## What I'm looking for
 
-Seguir creciendo como **Frontend Developer**, trabajando en producto real, con usuarios, lógica y contexto.
+To keep growing as a **Frontend Developer**, working on real products with users, logic, and clear goals.
 
-No busco atajos. Busco base sólida.
+I’m not looking for shortcuts. I’m building solid foundations.
 
 ---
 
-## Contacto
+## Contact
 
 - LinkedIn: @fernanglez  
 - Email: fdoglezr@gmail.com  
-- Málaga, España
+- Málaga, Spain
