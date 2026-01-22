@@ -44,7 +44,7 @@ Fue mi primer contacto serio con desarrollo en entorno enterprise.
 ---
 
 ### Proyectos web personales  
-**2022 – 2024**
+**2019 – 2024**
 
 Desarrollo y optimización de sitios web propios, con foco en SEO, rendimiento y experiencia de usuario:
 
