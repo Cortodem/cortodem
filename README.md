@@ -61,7 +61,7 @@ Project currently in **late development stage (near MVP)**. Deployment pending.
 ---
 
 ### Personal web projects  
-**2022 – 2024**
+**2019 – 2024**
 
 Development and optimization of personal websites, focused on SEO, performance, and user experience:
 
