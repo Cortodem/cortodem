@@ -35,7 +35,7 @@ Aplicación web que transforma datos meteorológicos en **recomendaciones práct
 
 - Desarrollo del **frontend con Angular**
 - Consumo de datos procesados desde un backend en **Python**
-- Trabajo coordinado con otro desarrollador (separación frontend / backend)
+- Trabajo coordinado con [Elicupra](https://github.com/Elicupra) (separación frontend / backend)
 - Enfoque en lógica de interfaz, experiencia de usuario y claridad de la información
 
 Proyecto actualmente en **fase final de desarrollo (casi MVP)**. Pendiente de despliegue.
