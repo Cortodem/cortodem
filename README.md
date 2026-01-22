@@ -1,50 +1,62 @@
 # Hola, soy Fernando González Rebollo
 
-Frontend Developer en crecimiento, con formación en **Desarrollo de Aplicaciones Web (DAW)** y experiencia real en **optimización web, CRO y mejora de experiencia de usuario**.
+Frontend Developer en crecimiento, con formación en **Desarrollo de Aplicaciones Web (DAW)** y experiencia real en **optimización web, CRO y desarrollo frontend**.
 
-No vengo solo del código. Vengo del **marketing digital**, y eso condiciona cómo desarrollo: pienso en usuario, conversión, rendimiento y producto, no solo en que algo “funcione”.
-
----
-
-## Cómo trabajo y cómo pienso
-
-- Me interesa **entender el problema antes que escribir código**
-- Prefiero soluciones claras y mantenibles antes que complejas
-- Valoro el impacto real: **UX, rendimiento y resultados**
-- Aprendo rápido, pero no vendo lo que aún no domino
+Vengo del marketing digital, y eso marca mi forma de trabajar: pienso en **usuario, contexto y utilidad real**, no solo en escribir código.
 
 ---
 
-## Experiencia
+## Cómo trabajo
+
+- Prefiero entender el problema antes de picar código
+- Me interesa que lo que hago **se use**, no solo que “funcione”
+- Valoro la claridad, el rendimiento y la experiencia de usuario
+- No vendo lo que aún estoy aprendiendo
+
+---
+
+## Experiencia actual
 
 ### HarryPotterHead — Colaborador en desarrollo y mantenimiento web  
 **Actualidad**
 
-Trabajo en una plataforma en producción basada en **PHP y SMF**, realizando:
+Colaboro en una plataforma en producción basada en **PHP y SMF**:
 
 - Corrección de errores y soporte técnico
 - Mejoras funcionales y pequeños ajustes frontend
 - Mantenimiento continuo sobre una web con usuarios reales
 
-Aquí no hay demos: hay código que usan personas.
+---
+
+### metestats — Web app de meteorología (proyecto en desarrollo)
+**Actualidad | Repo privado**
+
+Aplicación web que transforma datos meteorológicos en **recomendaciones prácticas de vestimenta**.
+
+- Desarrollo del **frontend con Angular**
+- Consumo de datos procesados desde un backend en **Python**
+- Trabajo coordinado con otro desarrollador (separación frontend / backend)
+- Enfoque en lógica de interfaz, experiencia de usuario y claridad de la información
+
+Proyecto actualmente en **fase final de desarrollo (casi MVP)**. Pendiente de despliegue.
 
 ---
+
+## Experiencia previa
 
 ### Accenture — Soporte en Conversion Rate Optimization (CRO)  
 **Mar 2025 – Jun 2025**
 
-- Implementación de mejoras frontend y **tests A/B**
+- Implementación de mejoras frontend y tests A/B
 - Uso de **JavaScript, jQuery y Shadow DOM**
-- Optimización de UX y conversión en aplicaciones web
+- Optimización de UX y conversión
 - Trabajo en entorno corporativo con equipos multidisciplinares
 - Adaptación y depuración en desktop, mobile y tablet
-
-Fue mi primer contacto serio con desarrollo en entorno enterprise.
 
 ---
 
 ### Proyectos web personales  
-**2019 – 2024**
+**2022 – 2024**
 
 Desarrollo y optimización de sitios web propios, con foco en SEO, rendimiento y experiencia de usuario:
 
@@ -54,14 +66,14 @@ Desarrollo y optimización de sitios web propios, con foco en SEO, rendimiento y
 
 ---
 
-## Tecnologías con las que trabajo
+## Tecnologías
 
 **Frontend**
 - HTML5, CSS3, JavaScript (ES6+)
-- Angular (aprendizaje activo)
+- Angular (uso activo)
 - React
 
-**Web / CMS**
+**Backend / Web**
 - PHP (entorno SMF)
 - WordPress, Elementor
 
@@ -73,20 +85,21 @@ Desarrollo y optimización de sitios web propios, con foco en SEO, rendimiento y
 
 **Otros**
 - Git & GitHub
-- Trabajo con equipos técnicos y de marketing
+- Trabajo en equipo
 - Metodologías ágiles
 
 ---
 
-## Qué busco ahora
+## Qué busco
 
-Un entorno donde pueda **seguir creciendo como Frontend Developer**, aportar desde el primer día y trabajar en producto real, con usuarios y objetivos claros.
+Seguir creciendo como **Frontend Developer**, trabajando en producto real, con usuarios, lógica y contexto.
 
-No busco ir rápido. Busco hacerlo bien.
+No busco atajos. Busco base sólida.
 
 ---
 
 ## Contacto
 
 - LinkedIn: @fernanglez  
-- Email: fdoglezr@gmail.com
+- Email: fdoglezr@gmail.com  
+- Málaga, España
