@@ -56,7 +56,7 @@ Proyecto actualmente en **fase final de desarrollo (casi MVP)**. Pendiente de de
 ---
 
 ### Proyectos web personales  
-**2022 – 2024**
+**2019 – 2024**
 
 Desarrollo y optimización de sitios web propios, con foco en SEO, rendimiento y experiencia de usuario:
 
