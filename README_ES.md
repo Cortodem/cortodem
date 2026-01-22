@@ -1,4 +1,4 @@
-🇬🇧 [English](README_ES.md) | 🇪🇸 Español
+🇬🇧 [English](README.md) | 🇪🇸 Español
 
 # Hola, soy Fernando González Rebollo
 
