@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="recursos/images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando González | Frontend Portfolio</title>
+</head>
+
+<body>
+    <header class="header-ppal">
+        <section class="header-dev">
+            <img src="recursos/images/foto.jpg" alt="El desarrollador Fernando mirando a cámara">
+            <h1 class="namedev">Fernando González</h1>
+        </section>
+        <nav class="navbar">
+            <a class="nav-link" href="#">
+                Inicio
+                <span class="tooltip scale-in">Vuelve al inicio de todo</span>
+            </a>
+            <a class="nav-link" href="#projects">
+                Proyectos
+                <span class="tooltip scale-in">Encuentra una selección</span>
+            </a>
+            <a class="nav-link" href="#">
+                Portafolio
+                <span class="tooltip scale-in">Revisa mis trabajos</span>
+            </a>
+            <a class="nav-link" href="#">
+                Estudios
+                <span class="tooltip scale-in">Conoce mi formación</span>
+            </a>
+            <a class="nav-link" href="#">
+                Contacto
+                <span class="tooltip scale-in">Háblame y te hablo</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <header class="header-main">
+            <div>
+                <p>Hola, soy <span>Fernando</span>, soy <span>Desarrollador frontend</span></p>
+            </div>
+            <section class="code">
+                <pre><span class="pink">const</span> coder <span class="pink">=</span> {
+    name: <span>'Fernando González',</span>
+    skills:[ <span class="yellow">'HTML'</span>, <span class="yellow">'Angular'</span>, <span class="yellow">'Astro'</span>, <span class="yellow">'TailwindCSS', </span>
+    <span class="yellow">'CSS'</span>, <span class="yellow">'JavaScript'</span> ]
+    clientView: <span class="orange">true</span>,
+    problemSolver: <span class="orange">true</span>,
+    <span class="green">profesional:</span> <span class="orange">function</span> () {
+        <span>return</span> (
+            <span class="blue">this</span>.clientView <span class="yellow">&&</span>
+            <span class="blue">this</span>.problemSolver <span class="yellow">&&</span>
+            <span class="blue">this</span>.skills.length <span class="yellow">>=</span> <span class="orange">5</span>
+        );
+    };
+};</pre>
+            </section>
+        </header>
+
+        <section id="projects" class="tabs">
+            <header class="header-tabs">
+                <h2 id="projects-header">Proyectos</h2>
+            </header>
+            <nav class="nav-tab">
+                <ul class="list-tab" aria-labelledby="projects-header"></ul>
+            </nav>
+            <div class="content-tab"></div>
+        </section>
+
+        <section class="lifetime">
+            <section class="changelog">
+                <header class="changelog-header">
+                    <h2>Timeline profesional</h2>
+                    <p>Explora mi progreso como desarrollador en cada etapa del camino.</p>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <time datetime="2007-2009">2007 - 2009</time>
+                        <div class="content">
+                            <h3>Primer contacto con tecnología</h3>
+                            <div>
+                                <p>Inicio en Ingeniería Técnica de Informática</p>
+                                <p>Primer acercamiento al mundo del desarrollo y la lógica</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <time datetime="2009-2011">2009 - 2011</time>
+                        <div class="content">
+                            <h3>Exploración de negocio</h3>
+                            <div>
+                                <p>Etapa en Empresariales, enfocada a entender fundamentos de gestión y empresa.</p>
+                                <p>Cambio de enfoque hacia la parte económica y organizativa.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <time datetime="2011-2016">2011 - 2016</time>
+                        <div class="content">
+                            <h3>Experiencia internacional</h3>
+                            <div>
+                                <p>Residencia en República Dominicana durante varios años.</p>
+                                <p>Desarrollo de adaptación a entornos distintos, autonomía y visión práctica del mundo
+                                    real.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <time datetime="2017-2021">2017 - 2021</time>
+                        <div class="content">
+                            <h3>Base en marketing y usuario</h3>
+                            <div>
+                                <p>Formación en Marketing e Investigación de Mercados.</p>
+                                <p>Especialización en comportamiento de usuario, negocio y entorno digital.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <time datetime="2020-2021">2020 - 2021</time>
+                        <div class="content">
+                            <h3>Marketing digital y e-commerce</h3>
+                            <div>
+                                <p>Primer contacto profesional con entorno digital, participando en gestión de clientes,
+                                    campañas y mejora de procesos.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <time datetime="2022-2023">2022 - 2023</time>
+                        <div class="content">
+                            <h3>Gestión de negocio y operaciones</h3>
+                            <div>
+                                <p>Coordinación en entorno inmobiliario, trabajando con clientes, procesos internos y
+                                    herramientas digitales.</p>
+                                <p>Optimización operativa y apoyo en marketing.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <time datetime="2019-2026">2019 - Actualidad</time>
+                        <div class="content">
+                            <h3>Desarrollo web y proyectos propios</h3>
+                            <div>
+                                <p>Creación de sitios web orientados a negocio, combinando desarrollo frontend con SEO,
+                                    rendimiento y conversión.</p>
+                                <p>Trabajo en proyectos reales enfocados a captación y experiencia de usuario.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <time datetime="2025">2025</time>
+                        <div class="content">
+                            <h3>Optimización en entorno corporativo</h3>
+                            <div>
+                                <p>Participación en proyectos de CRO, implementando mejoras técnicas y test A/B en
+                                    aplicaciones web.</p>
+                                <p>Colaboración con equipos multidisciplinares.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-item">
+                        <time datetime="2025-2026">2025 - Actualidad</time>
+                        <div class="content">
+                            <h3>Desarrollo en producción</h3>
+                            <div>
+                                <p>Colaboración técnica en plataforma web activa, resolviendo incidencias y
+                                    desarrollando nuevas funcionalidades.</p>
+                                <p>Trabajo con control de versiones y dinámicas reales de desarrollo.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="footer">
+                    <a href="#" class="btn">Ver experiencia completa</a>
+                </div>
+            </section>
+
+            <!-- <section class="education-section">
+                <header class="education-header">
+                    <h2>Formación</h2>
+                </header>
+                <section class="list">
+                    <article class="education">
+                        <header>
+                            <h3>MeteStats App</h3>
+                        </header>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat
+                            aliquam cupiditate, quibusdam facere sunt molestiae magnam, minus rem ullam doloribus.</p>
+                    </article>
+                    <article class="education">
+                        <header>
+                            <h3>Finance Home App</h3>
+                        </header>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat
+                            aliquam cupiditate, quibusdam facere sunt molestiae magnam, minus rem ullam doloribus.</p>
+                    </article>
+                    <article class="education">
+                        <header>
+                            <h3>Web de Mirass</h3>
+                        </header>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat
+                            aliquam cupiditate, quibusdam facere sunt molestiae magnam, minus rem ullam doloribus.</p>
+                    </article>
+                    <article class="education">
+                        <header>
+                            <h3>Otros proyectos</h3>
+                        </header>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat
+                            aliquam cupiditate, quibusdam facere sunt molestiae magnam, minus rem ullam doloribus.</p>
+                    </article>
+                </section>
+            </section> -->
+
+
+        </section>
+
+        <section class="testimonial">
+            <header class="testimonial-header">
+                <h2>Testimonios</h2>
+            </header>
+
+            <ul class="testimonial-cards">
+                <li class="testimonial-item">
+                    <div class="testimonial-personal">
+                        <img src="avatar-default.jpg" alt="">
+                        <div>
+                            <p>Nombre 1</p>
+                            <span>Puesto de trabajo</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque iste sapiente enim maxime
+                            nostrum doloribus commodi nemo perferendis. Et officiis unde ipsum ipsa, fugit eum veritatis
+                            aspernatur modi maiores?</p>
+                    </div>
+                </li>
+
+                <li class="testimonial-item">
+                    <div class="testimonial-personal">
+                        <img src="avatar-default.jpg" alt="">
+                        <div>
+                            <p>Nombre 2</p>
+                            <span>Puesto de trabajo</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque iste sapiente enim maxime
+                            nostrum doloribus commodi nemo perferendis. Et officiis unde ipsum ipsa, fugit eum veritatis
+                            aspernatur modi maiores?</p>
+                    </div>
+                </li>
+
+                <li class="testimonial-item">
+                    <div class="testimonial-personal">
+                        <img src="avatar-default.jpg" alt="">
+                        <div>
+                            <p>Nombre 3</p>
+                            <span>Puesto de trabajo</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque iste sapiente enim maxime
+                            nostrum doloribus commodi nemo perferendis. Et officiis unde ipsum ipsa, fugit eum veritatis
+                            aspernatur modi maiores?</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="accessible-form">
+            <form class="af-form" action="">
+                <label class="af-label error" for="name">Nombre completo
+                    <div class="div-input error">
+                        <input class="af-input" type="text" name="name" id="name">
+                    </div>
+                </label>
+
+                <label class="af-label" for="email">Email
+                    <div class="div-input">
+                        <input class="af-input" type="email" name="email" id="email">
+                    </div>
+                </label>
+
+                <label class="af-label error" for="pass">Introduzca contraseña
+                    <div class="div-input error">
+                        <input class="af-input" type="password" name="pass" id="pass">
+                        <button class="bt-input" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                            </svg>
+                        </button>
+                    </div>
+                </label>
+
+                <label class="af-label" for="confirm-pass">Confirme contraseña
+                    <div class="div-input">
+                        <input class="af-input" type="password" name="confirm-pass" id="confirm-pass">
+                        <button class="bt-input" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-eye-off">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10.585 10.587a2 2 0 0 0 2.829 2.828" />
+                                <path
+                                    d="M16.681 16.673a8.717 8.717 0 0 1 -4.681 1.327c-3.6 0 -6.6 -2 -9 -6c1.272 -2.12 2.712 -3.678 4.32 -4.674m2.86 -1.146a9.055 9.055 0 0 1 1.82 -.18c3.6 0 6.6 2 9 6c-.666 1.11 -1.379 2.067 -2.138 2.87" />
+                                <path d="M3 3l18 18" />
+                            </svg>
+                        </button>
+                    </div>
+                </label>
+
+                <input class="af-input af-submit" type="submit" value="Actualizar perfil">
+            </form>
+
+            <section class="af-progress">
+                <div class="af-completed">
+                    <span class="text-xl">65%</span>
+                    <div class="progress-var" role="progressbar" aria-label="Progreso" aria-valuemin="0"
+                        aria-valuemax="100" aria-valuenow="65"></div>
+
+                    <h2>Perfil completado</h2>
+                </div>
+                <div class="af-progress-list">
+                    <ul class="af-list">
+                        <li class="af-task completed">Crea tu cuenta</li>
+                        <li class="af-task completed">Actualiza progreso de mapa</li>
+                        <li class="af-task completed">Configura tu perfil público</li>
+                        <li class="af-task">Completa tu primer proyecto</li>
+                        <li class="af-task">Invita a tus amigos</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
