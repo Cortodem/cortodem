@@ -86,14 +86,14 @@ main {
 
 /* MAIN - contenedor principal */
 main {
-    padding: 12px;
+    padding: 85px;
     margin: 15px auto 0px;
 }
 
 main>section {
     width: 100%;
-    padding: 0px 40px;
-    margin: 50px 0px;
+    padding: 85px 40px;
+    
 }
 
 /* ==================== */
@@ -176,7 +176,6 @@ main>section {
 
 /* HEADER MAIN - cabecera del main */
 .header-main {
-    margin-top: 85px;
     color: var(--text);
 }
 
@@ -233,8 +232,7 @@ pre {
 /* HEADERS SECTION - cabeceras de secciones */
 .testimonial-header,
 .header-tabs,
-.changelog-header,
-.education-header {
+.changelog-header {
     justify-items: center;
     margin-bottom: 2rem;
 }
