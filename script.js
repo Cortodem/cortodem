@@ -147,9 +147,9 @@ function printProject(project) {
             <p>${project.description}</p>
             <p class="tech">${techHTML}</p>
 
-        </div>
-        <div class="links">
-            ${linksHTML}
+            <div class="links">
+                ${linksHTML}
+            </div>
         </div>
       </article>`;
 

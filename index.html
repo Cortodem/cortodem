@@ -15,9 +15,9 @@
     <header class="header-ppal">
         <section class="header-dev">
             <img src="recursos/images/foto.jpg" alt="El desarrollador Fernando mirando a cámara">
-            <h1 class="namedev">Fernando González</h1>
+            <span class="namedev">Fernando González</span>
         </section>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Navegación principal">
             <a class="nav-link" href="#">
                 Inicio
                 <span class="tooltip scale-in">Vuelve al inicio de todo</span>
@@ -43,7 +43,10 @@
     <main>
         <header class="header-main">
             <div>
-                <p>Hola, soy <span>Fernando</span>, soy <span>Desarrollador frontend</span></p>
+                <h1>Hola, soy <span>Fernando</span>,<br><span>Desarrollador frontend</span></h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, porro! Iusto excepturi nobis at
+                    earum, id sint labore incidunt esse enim sapiente magnam repellat officia. Itaque iure quod
+                    similique nulla!</p>
             </div>
             <section class="code">
                 <pre><span class="pink">const</span> coder <span class="pink">=</span> {
@@ -67,7 +70,7 @@
             <header class="header-tabs">
                 <h2 id="projects-header">Proyectos</h2>
             </header>
-            <nav class="nav-tab">
+            <nav class="nav-tab" aria-labelledby="projects-header">
                 <ul class="list-tab" aria-labelledby="projects-header"></ul>
             </nav>
             <div class="content-tab"></div>
@@ -191,43 +194,6 @@
                 </div>
             </section>
 
-            <!-- <section class="education-section">
-                <header class="education-header">
-                    <h2>Formación</h2>
-                </header>
-                <section class="list">
-                    <article class="education">
-                        <header>
-                            <h3>MeteStats App</h3>
-                        </header>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat
-                            aliquam cupiditate, quibusdam facere sunt molestiae magnam, minus rem ullam doloribus.</p>
-                    </article>
-                    <article class="education">
-                        <header>
-                            <h3>Finance Home App</h3>
-                        </header>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat
-                            aliquam cupiditate, quibusdam facere sunt molestiae magnam, minus rem ullam doloribus.</p>
-                    </article>
-                    <article class="education">
-                        <header>
-                            <h3>Web de Mirass</h3>
-                        </header>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat
-                            aliquam cupiditate, quibusdam facere sunt molestiae magnam, minus rem ullam doloribus.</p>
-                    </article>
-                    <article class="education">
-                        <header>
-                            <h3>Otros proyectos</h3>
-                        </header>
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellat
-                            aliquam cupiditate, quibusdam facere sunt molestiae magnam, minus rem ullam doloribus.</p>
-                    </article>
-                </section>
-            </section> -->
-
-
         </section>
 
         <section class="testimonial">
@@ -337,8 +303,7 @@
             <section class="af-progress">
                 <div class="af-completed">
                     <span class="text-xl">65%</span>
-                    <div class="progress-var" role="progressbar" aria-label="Progreso" aria-valuemin="0"
-                        aria-valuemax="100" aria-valuenow="65"></div>
+                    <progress class="progress-var" aria-label="Progreso" value="65" max="100"></progress>
 
                     <h2>Perfil completado</h2>
                 </div>
