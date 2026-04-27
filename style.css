@@ -91,8 +91,8 @@ main {
 }
 
 main>section {
-    width: 100%;
-    padding: 85px 40px;
+    max-width: 100%;
+    padding: 85px 0px;
 
 }
 
@@ -508,18 +508,30 @@ section header h2 {
 
 /* TESTIMONIALS - testimonios */
 
+
 .testimonial-cards {
-    width: 100%;
     display: flex;
     list-style: none;
-    /* overflow: auto;
-    scrollbar-width: none; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
 }
 
+/* Opcional: estilo de la barra de scroll */
+/* .testimonial-cards::-webkit-scrollbar {
+    height: 0px;
+}
+
+.testimonial-cards::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+} */
+
 .testimonial-item {
-    width: 1000px;
+    width: 33%;
     display: flex;
     flex-direction: column;
+    flex: 0 0 auto;
     gap: 1rem;
     margin: 0.5rem;
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
