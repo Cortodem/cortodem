@@ -537,7 +537,7 @@ section header h2 {
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
     border-radius: 7px;
     padding: 1rem;
-    background-color: var(--bg);
+    background-color: var(--card);
 }
 
 .testimonial-personal {
@@ -546,23 +546,19 @@ section header h2 {
     align-items: center;
 }
 
-.testimonial-personal>div {
-    padding: 0;
-    margin: 0;
-}
-
 .testimonial-personal span {
     font-size: small;
-    color: #202020;
+    color: var(--muted);
 }
 
 .testimonial-personal>img {
     height: 50px;
     width: 50px;
+    object-fit: cover;
+    object-position: top;
     border-radius: 25px;
+    background-color: #10b981;
 }
-
-/*FORMULARIO*/
 
 /* FORMULARIO */
 
