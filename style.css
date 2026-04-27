@@ -11,7 +11,8 @@
     --accent-50: rgba(37, 99, 235, 0.08);
     --text: #333;
     --today: #e6f0ff;
-    --danger: #e6e9ef;
+    --danger: #c92727;
+    --radius: 20px;
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
@@ -232,7 +233,8 @@ pre {
 /* HEADERS SECTION - cabeceras de secciones */
 .testimonial-header,
 .header-tabs,
-.changelog-header {
+.changelog-header,
+.form-header {
     justify-items: center;
     margin-bottom: 2rem;
 }
@@ -318,7 +320,7 @@ section header h2 {
 
 .tabs .content-tab .project-card .tags span {
     padding: 3px 10px;
-    border-radius: 20px;
+    border-radius: var(--radius);
     background-color: var(--accent-50);
     color: var(--text);
 }
@@ -355,7 +357,7 @@ section header h2 {
 
 .links .button-link:first-child {
     background-color: var(--accent);
-    color: var(--danger);
+    color: var(--bg);
 }
 
 .links a svg {
@@ -494,16 +496,24 @@ section header h2 {
 .btn {
     display: inline-block;
     padding: 14px 28px;
-    background: #111;
-    color: white;
+    background: var(--accent);
+    color: var(--bg);
     text-decoration: none;
+    border: 3px solid var(--accent);
     border-radius: 10px;
-    font-weight: 500;
     transition: 0.2s ease;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: translateY(1px) scale(.997);
 }
 
 .btn:hover {
-    background: var(--text);
+    background: var(--accent-50);
+    border: 3px solid var(--accent);
+    color: var(--accent);
 }
 
 /* TESTIMONIALS - testimonios */
@@ -561,131 +571,133 @@ section header h2 {
 }
 
 /* FORMULARIO */
-
-.text-xl {
-    font-size: xx-large;
-    font-weight: bolder;
+.af-form {
+    background: var(--bg);
+    padding: 30px;
+    border-radius: calc(var(--radius) + 2px);
+    box-shadow: 0 6px 28px rgba(13, 20, 40, 0.06);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #0f172a;
+    margin: 0 auto;
 }
 
-.accessible-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-}
-
-.accessible-form .af-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.accessible-form .af-form .af-submit {
-    background-color: var(--accent);
-    cursor: pointer;
-}
-
-.accessible-form .af-form .af-submit:hover {
-    background-color: var(--muted);
-}
-
-.accessible-form .af-form .af-submit:active {
-    background-color: #059669;
-}
-
-.accessible-form .af-form .af-input {
-    width: 100%;
-    padding: 8px 12px;
-    border: none;
-}
-
-.accessible-form .af-form .af-label {
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 12px;
-}
-
-.accessible-form .af-form .af-label .div-input {
-    position: relative;
-    border-radius: 7px;
-    border: 2px solid var(--muted);
-    overflow: hidden;
-}
-
-.accessible-form .af-form .af-label .div-input:focus,
-.accessible-form .af-form .af-label .div-input:hover {
-    background-color: var(--bg);
-    border-color: #2563eb;
-}
-
-.accessible-form .af-form .af-label .bt-input {
-    position: absolute;
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 28px;
-    width: 28px;
+.af-fieldset {
     border: 0;
-    background: transparent;
-    cursor: pointer;
-}
-
-.accessible-form .af-form .div-input.error {
-    border: 2px solid red;
-}
-
-.accessible-form .af-form label.error::after {
-    content: "Error de contenido";
-    color: red;
-    font-size: small;
-    padding-left: 5px;
-}
-
-.accessible-form .af-progress {
-    padding-top: 18px;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 26px;
     flex-direction: column;
+    gap: var(--gap);
 }
 
-.accessible-form .af-progress .af-progress-list {
-    flex: 1 1 auto;
-    min-height: 0;
-    padding: 20px 15px;
-    background-color: var(--muted);
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+.af-legend {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #0b1220;
 }
 
-.accessible-form .af-progress .af-progress-list .af-list {
-    list-style: none;
+.af-label {
+    display: block;
+    font-size: 0.95rem;
 }
 
-.accessible-form .af-progress .af-progress-list .completed {
-    text-decoration: line-through;
-    text-decoration-color: var(--today);
-    color: var(--today);
+.af-label-text {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #0f172a;
 }
 
-.progress-var {
-    --p: 65;
-    width: 100%;
-    max-width: 400px;
-    height: 16px;
-    background: #eef4ff;
-    border-radius: 999px;
+.div-input {
+    display: block;
     position: relative;
-    overflow: hidden;
 }
 
-.progress-var::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: calc(var(--p) * 1%);
-    background: linear-gradient(90deg, #10b981, #059669);
-    transition: width 300ms ease;
+.af-input,
+.af-textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background: var(--accent-50);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: var(--text);
+    box-sizing: border-box;
+    transition: box-shadow .18s ease, border-color .18s ease, transform .08s ease;
+}
+
+.af-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.af-input::placeholder,
+.af-textarea::placeholder {
+    color: #9aa3b2;
+    font-weight: 500;
+}
+
+.af-input:focus,
+.af-textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08);
+    transform: translateY(-1px);
+}
+
+.af-help {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.af-error {
+    display: none;
+    margin-top: 8px;
+    font-size: 0.88rem;
+    color: var(--error);
+}
+
+/* Error state helper classes — añade .is-error a .div-input para activar */
+.div-input.is-error .af-input,
+.div-input.is-error .af-textarea {
+    border-color: var(--error);
+    box-shadow: 0 6px 18px rgba(220, 38, 38, 0.06);
+}
+
+.div-input.is-error .af-error {
+    display: block;
+}
+
+/* Actions */
+.af-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+}
+
+
+
+/* Small screens */
+@media (max-width:560px) {
+    :root {
+        --width: 100%;
+    }
+
+    .af-form {
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .af-actions {
+        justify-content: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
 
 /* ==================== */

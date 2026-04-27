@@ -225,7 +225,7 @@
                         <img src="recursos\images\avatar.png" alt="">
                         <div>
                             <p>Eliseo</p>
-                            <span>Programador</span>
+                            <span>Analista & Programador en Accenture España</span>
                         </div>
                     </div>
                     <div class="testimonial-content">
@@ -268,77 +268,54 @@
         </section>
 
         <section id="form" class="accessible-form">
-            <form class="af-form" action="">
-                <label class="af-label error" for="name">Nombre completo
-                    <div class="div-input error">
-                        <input class="af-input" type="text" name="name" id="name">
-                    </div>
-                </label>
+            <header class="form-header">
+                <h2>Fromulario de contacto</h2>
+            </header>
+            <form class="af-form" action="" novalidate>
+                <fieldset class="af-fieldset" aria-describedby="form-desc">
+                    <legend id="form-desc" class="af-legend">Contacta conmigo</legend>
 
-                <label class="af-label" for="email">Email
-                    <div class="div-input">
-                        <input class="af-input" type="email" name="email" id="email">
-                    </div>
-                </label>
+                    <label class="af-label" for="name">
+                        <span class="af-label-text">Nombre completo</span>
+                        <div class="div-input">
+                            <input class="af-input" type="text" name="name" id="name" required aria-required="true"
+                                placeholder="Tu nombre">
+                            <span class="af-error" id="name-error" aria-live="polite">Por favor introduce tu
+                                nombre.</span>
+                        </div>
+                    </label>
 
-                <label class="af-label error" for="pass">Introduzca contraseña
-                    <div class="div-input error">
-                        <input class="af-input" type="password" name="pass" id="pass">
-                        <button class="bt-input" type="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
-                                <path
-                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
-                            </svg>
-                        </button>
-                    </div>
-                </label>
+                    <label class="af-label" for="email">
+                        <span class="af-label-text">Email</span>
+                        <div class="div-input">
+                            <input class="af-input" type="email" name="email" id="email" required aria-required="true"
+                                placeholder="tunombre@ejemplo.com">
+                            <span class="af-error" id="email-error" aria-live="polite">Introduce un email válido.</span>
+                        </div>
+                    </label>
 
-                <label class="af-label" for="confirm-pass">Confirme contraseña
-                    <div class="div-input">
-                        <input class="af-input" type="password" name="confirm-pass" id="confirm-pass">
-                        <button class="bt-input" type="button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="icon icon-tabler icons-tabler-outline icon-tabler-eye-off">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M10.585 10.587a2 2 0 0 0 2.829 2.828" />
-                                <path
-                                    d="M16.681 16.673a8.717 8.717 0 0 1 -4.681 1.327c-3.6 0 -6.6 -2 -9 -6c1.272 -2.12 2.712 -3.678 4.32 -4.674m2.86 -1.146a9.055 9.055 0 0 1 1.82 -.18c3.6 0 6.6 2 9 6c-.666 1.11 -1.379 2.067 -2.138 2.87" />
-                                <path d="M3 3l18 18" />
-                            </svg>
-                        </button>
-                    </div>
-                </label>
+                    <label class="af-label" for="message">
+                        <span class="af-label-text">Mensaje para mí</span>
+                        <div class="div-input">
+                            <textarea class="af-textarea" name="message" id="message" rows="5"
+                                placeholder="Escribe tu mensaje..." required aria-required="true"></textarea>
+                            <span class="af-help">Máx. 500 caracteres</span>
+                        </div>
+                    </label>
 
-                <input class="af-input af-submit" type="submit" value="Actualizar perfil">
+                    <div class="af-actions">
+                        <button class="btn" type="submit">Contacta conmigo</button>
+                    </div>
+                </fieldset>
             </form>
-
-            <section class="af-progress">
-                <div class="af-completed">
-                    <span class="text-xl">65%</span>
-                    <progress class="progress-var" aria-label="Progreso" value="65" max="100"></progress>
-
-                    <h2>Perfil completado</h2>
-                </div>
-                <div class="af-progress-list">
-                    <ul class="af-list">
-                        <li class="af-task completed">Crea tu cuenta</li>
-                        <li class="af-task completed">Actualiza progreso de mapa</li>
-                        <li class="af-task completed">Configura tu perfil público</li>
-                        <li class="af-task">Completa tu primer proyecto</li>
-                        <li class="af-task">Invita a tus amigos</li>
-                    </ul>
-                </div>
-            </section>
         </section>
     </main>
 
     <script src="script.js"></script>
 </body>
+
+<footer class="footer">
+    <p>© 2026 Fernando González. Desarrollado por Web de Mirass.</p>
+</footer>
 
 </html>
