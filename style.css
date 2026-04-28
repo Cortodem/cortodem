@@ -18,17 +18,27 @@
 
 
 [data-theme="dark"] {
-    --bg: #0b0b0d;
-    --text: #f5f5f7;
-    --btn-bg: #1a1a1c;
-    --btn-text: #f5f5f7;
+    --bg: #0b1116;
+    --card: #0f1720;
+    --muted: #93a3b5;
+    --accent: #3b82f6;
+    --accent-50: rgba(59, 130, 246, 0.12);
+    --text: #e6eef8;
+    --today: #153a66;
+    --danger: #ff6b6b;
+    --shadow: rgba(2, 6, 23, 0.6);
 }
 
 [data-theme="light"] {
-    --bg: #fff;
-    --text: #111;
-    --btn-bg: #eee;
-    --btn-text: #111;
+    --bg: #f6f8fb;
+    --card: #ffffff;
+    --muted: #9aa4b2;
+    --accent: #2563eb;
+    --accent-50: rgba(37, 99, 235, 0.08);
+    --text: #333;
+    --today: #e6f0ff;
+    --danger: #c92727;
+    --shadow: rgba(16, 24, 40, 0.06);
 }
 
 /* Reset global para consistencia */
@@ -82,7 +92,7 @@ main {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 20px var(--shadow);
 }
 
 .header-dev {
@@ -138,7 +148,7 @@ main>section {
     font-size: 14px;
     text-align: center;
     color: var(--today);
-    background-color: #333;
+    background-color: var(--text);
     pointer-events: none;
     position: absolute;
     top: 100%;
@@ -171,7 +181,7 @@ main>section {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent #333 transparent;
+    border-color: transparent transparent var(--text) transparent;
 }
 
 .nav-link:hover .tooltip,
@@ -199,8 +209,8 @@ main>section {
 .code {
     padding: 30px 35px;
     border-radius: 10px;
-    background-color: var(--text);
-    box-shadow: 10px 20px 45px rgba(0, 0, 0, 0.2);
+    background-color: var(--muted);
+    box-shadow: 10px 20px 45px var(--shadow);
 }
 
 .code header {
@@ -292,10 +302,10 @@ section header h2 {
 }
 
 .tabs .content-tab {
-    background-color: var(--today);
+    background-color: var(--bg);
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 10px 20px 45px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 20px 45px var(--shadow);
 }
 
 .tabs .content-tab .project-card {
@@ -303,7 +313,6 @@ section header h2 {
     height: 400px;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 40px;
     background-color: var(--card);
     border-radius: 17px;
     overflow: hidden;
@@ -324,7 +333,8 @@ section header h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 20px;
+    padding: 30px;
+    background: var(--accent-50);
 }
 
 .tabs .content-tab .project-card .tags {
@@ -484,7 +494,7 @@ section header h2 {
 /* HOVER → EXPANSIÓN */
 .timeline-item .content:hover {
     flex: 3;
-    background: var(--accent);
+    background: var(--accent-50);
     padding-left: 10px;
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -542,16 +552,6 @@ section header h2 {
     scrollbar-width: none;
 }
 
-/* Opcional: estilo de la barra de scroll */
-/* .testimonial-cards::-webkit-scrollbar {
-    height: 0px;
-}
-
-.testimonial-cards::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.12);
-    border-radius: 8px;
-} */
-
 .testimonial-item {
     width: 33%;
     display: flex;
@@ -559,7 +559,7 @@ section header h2 {
     flex: 0 0 auto;
     gap: 1rem;
     margin: 0.5rem;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 45px var(--shadow);
     border-radius: 7px;
     padding: 1rem;
     background-color: var(--card);
@@ -590,7 +590,7 @@ section header h2 {
     background: var(--bg);
     padding: 30px;
     border-radius: calc(var(--radius) + 2px);
-    box-shadow: 0 6px 28px rgba(13, 20, 40, 0.06);
+    box-shadow: 0 6px 28px var(--shadow);
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     color: #0f172a;
     margin: 0 auto;
@@ -609,7 +609,7 @@ section header h2 {
     font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 4px;
-    color: #0b1220;
+    color: var(--text);
 }
 
 .af-label {
@@ -621,7 +621,7 @@ section header h2 {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
-    color: #0f172a;
+    color: var(--text);
 }
 
 .div-input {
@@ -657,7 +657,7 @@ section header h2 {
 .af-textarea:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.08);
+    box-shadow: 0 6px 18px var(--shadow);
     transform: translateY(-1px);
 }
 
@@ -679,7 +679,7 @@ section header h2 {
 .div-input.is-error .af-input,
 .div-input.is-error .af-textarea {
     border-color: var(--error);
-    box-shadow: 0 6px 18px rgba(220, 38, 38, 0.06);
+    box-shadow: 0 6px 18px var(--shadow);
 }
 
 .div-input.is-error .af-error {
@@ -759,10 +759,14 @@ section header h2 {
 @media (prefers-color-scheme: dark) {
 
     :root {
-        --bg: #0b0b0d;
-        --text: #f5f5f7;
-        --btn-bg: #1a1a1c;
-        --btn-text: #f5f5f7;
+        --bg: #0b1116;
+        --card: #0f1720;
+        --muted: #93a3b5;
+        --accent: #3b82f6;
+        --accent-50: rgba(59, 130, 246, 0.12);
+        --text: #e6eef8;
+        --today: #153a66;
+        --danger: #ff6b6b;
     }
 
 }
@@ -770,12 +774,21 @@ section header h2 {
 
 
 button[aria-pressed="true"] {
-  background: #222;
-  color: #fff;
-  box-shadow: inset 0 0 0 2px #444;
+    background: var(--text);
+    color: var(--bg);
+    padding: 5px;
+    border-radius: 100px;
+    border: none;
+    height: 40px;
+    width: 40px;
 }
 
 button[aria-pressed="false"] {
-  background: #eee;
-  color: #111;
+    background: var(--text);
+    color: var(--bg);
+    padding: 5px;
+    border-radius: 100px;
+    border: none;
+    height: 40px;
+    width: 40px;
 }
