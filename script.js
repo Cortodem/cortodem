@@ -3,11 +3,11 @@ let liList = document.querySelectorAll('.tab'),
 
 const projects = [
     {
-        title: "Weather App (Angular)",
-        description: "Aplicación para consultar el clima mediante una API y mostrar datos dinámicos en la interfaz.",
+        title: "MeteStats App (Angular)",
+        description: "Aplicación que, a través de consultar el clima mediante una API, recomienda qué vestimenta es la más adecuada.",
         image: "recursos/images/clima.webp",
         tags: ["Frontend", "API", "En desarrollo"],
-        tech: ["Angular", "TypeScript", "API REST"],
+        tech: ["Angular", "TypeScript", "TailwindCSS"],
         links: {
             github: "https://github.com/Cortodem/clima-clon-prueba",
             live: null
@@ -16,7 +16,7 @@ const projects = [
     {
         title: "Interactive UI (Three.js)",
         description: "Experiencia interactiva basada en scroll con elementos dinámicos que abren ventanas de contenido.",
-        image: "recursos/images/threejs.png",
+        image: "recursos/images/threejs.webp",
         tags: ["Frontend", "UI", "En desarrollo"],
         tech: ["JavaScript", "Three.js", "Animaciones"],
         links: {
@@ -28,16 +28,16 @@ const projects = [
         title: "Funcionalidades en foro (Harry Potter Head)",
         description: "Desarrollo de funcionalidades dinámicas conectadas a base de datos: directorio automatizado, sistema de favoritos y cambio de imágenes.",
         image: "recursos/images/harrypotter.webp",
-        tags: ["Sistema", "Backend", "Producción"],
-        tech: ["PHP", "JavaScript", "MySQL"],
+        tags: ["Sistema", "Frontend", "Backend", "Producción"],
+        tech: ["PHP", "JavaScript", "MySQL", "Three.js"],
         links: {
             github: null,
-            live: null
+            live: 'https://harrypotterhead.com/foro/pages/Directorio.php'
         }
     },
     {
         title: "David Martínez Psicología",
-        description: "Web corporativa enfocada en captación de clientes con estructura SEO y optimización de rendimiento.",
+        description: "Web profesional enfocada en captación de clientes con estructura SEO y optimización de rendimiento.",
         image: "recursos/images/psicologo.webp",
         tags: ["Proyecto real", "WordPress"],
         tech: ["WordPress", "HTML", "CSS", "SEO"],

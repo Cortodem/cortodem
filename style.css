@@ -5,6 +5,8 @@
 /* Variables globales para colores y tipografía */
 :root {
     --bg: #f6f8fb;
+    --bg-header: rgba(255, 255, 255, 0.3);
+    --border-header: 1px solid rgba(255, 255, 255, 0.2);
     --card: #ffffff;
     --muted: #9aa4b2;
     --accent: #2563eb;
@@ -19,6 +21,8 @@
 
 [data-theme="dark"] {
     --bg: #0b1116;
+    --bg-header: rgba(15, 23, 30, 0.6);
+    --border-header: 1px solid rgba(255, 255, 255, 0.04);
     --card: #0f1720;
     --muted: #93a3b5;
     --accent: #3b82f6;
@@ -89,9 +93,9 @@ main {
     position: fixed;
     left: 20%;
     border-radius: 100px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--bg-header);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--border-header);
     box-shadow: 0 10px 20px var(--shadow);
 }
 
@@ -760,6 +764,8 @@ section header h2 {
 
     :root {
         --bg: #0b1116;
+        --bg-header: rgba(15, 23, 30, 0.6);
+        --border-header: 1px solid rgba(255, 255, 255, 0.04);
         --card: #0f1720;
         --muted: #93a3b5;
         --accent: #3b82f6;
@@ -767,6 +773,7 @@ section header h2 {
         --text: #e6eef8;
         --today: #153a66;
         --danger: #ff6b6b;
+        --shadow: rgba(2, 6, 23, 0.6);
     }
 
 }
@@ -781,6 +788,7 @@ button[aria-pressed="true"] {
     border: none;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
 button[aria-pressed="false"] {
@@ -791,4 +799,5 @@ button[aria-pressed="false"] {
     border: none;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
