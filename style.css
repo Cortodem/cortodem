@@ -56,7 +56,7 @@
     margin: 0;
     padding: 0;
 }
-#home>div>div>img{
+.header-main img{
     display:none;
 }
 /* Estilos base del body */
