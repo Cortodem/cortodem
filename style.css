@@ -9,13 +9,15 @@
     --border-header: 1px solid rgba(255, 255, 255, 0.2);
     --card: #ffffff;
     --muted: #9aa4b2;
-    --accent: #2563eb; /* azul limpio */
+    --accent: #2563eb;
     --accent-50: rgba(37, 99, 235, 0.08);
     --text: #333;
     --today: #e6f0ff;
     --danger: #c92727;
+    --shadow: rgba(16, 24, 40, 0.06);
     --radius: 20px;
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    --unicode: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 
@@ -25,19 +27,22 @@
     --border-header: 1px solid rgba(255, 255, 255, 0.04);
     --card: #0f1720;
     --muted: #93a3b5;
-    --accent: #8b5cf6; /* morado moderno */
+    --accent: #8b5cf6;
     --accent-50: rgba(139, 92, 246, 0.16);
     --text: #e6eef8;
     --today: #153a66;
     --danger: #ff6b6b;
     --shadow: rgba(2, 6, 23, 0.6);
+
+
 }
 
 [data-theme="light"] {
     --bg: #f6f8fb;
     --card: #ffffff;
     --muted: #9aa4b2;
-    --accent: #2563eb; /* azul limpio */
+    --accent: #2563eb;
+    /* azul limpio */
     --accent-50: rgba(37, 99, 235, 0.08);
     --text: #333;
     --today: #e6f0ff;
@@ -61,13 +66,13 @@ body {
 }
 
 .fondo-puntos {
-  width: 100%;
-  height: 100%;
-  background-color: var(--bg);
-  background-image: 
-    radial-gradient(var(--text) 3%, transparent 6%);
-  background-size: 20px 20px;
-  background-position: 0 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg);
+    background-image:
+        radial-gradient(var(--text) 3%, transparent 6%);
+    background-size: 20px 20px;
+    background-position: 0 0;
 }
 
 /*MAIN*/
@@ -152,7 +157,7 @@ main>section {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 20px;
+    padding: 12px 16px;
     width: auto;
     text-decoration: none;
     color: var(--text);
@@ -221,12 +226,17 @@ main>section {
     color: var(--text);
 }
 
+.header-main img {
+    display: none;
+}
+
 /* CODE - bloque de código */
 .code {
     padding: 30px 35px;
     border-radius: 10px;
-    background-color: var(--muted);
+    background-color: #1e293b;
     box-shadow: 10px 20px 45px var(--shadow);
+    font-family: var(--unicode);
 }
 
 .code header {
@@ -240,10 +250,6 @@ main>section {
     width: 0.75em;
     height: 0.75em;
     border-radius: 100%;
-}
-
-pre {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .code>p,
@@ -362,8 +368,11 @@ section header h2 {
 .tabs .content-tab .project-card .tags span {
     padding: 3px 10px;
     border-radius: var(--radius);
+    font-size: small;
+    font-family: var(--unicode);
     background-color: var(--accent-50);
     color: var(--text);
+    border: 1px solid var(--accent-50);
 }
 
 .tabs .content-tab .project-card p {
@@ -386,11 +395,11 @@ section header h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 1rem;
     background-color: var(--card);
     border: 2px solid var(--accent);
-    border-radius: 7px;
-    padding: 0.75rem 0;
+    border-radius: 15px;
+    padding: 0.2rem 0;
     font-size: large;
     text-decoration: none;
     color: var(--accent);
@@ -530,21 +539,16 @@ section header h2 {
     flex: 0.7;
 }
 
-.footer {
-    text-align: center;
-}
-
 .btn {
-    display: inline-block;
-    padding: 14px 28px;
+    padding: 0.2em 1em;
     background: var(--accent);
     color: var(--bg);
     text-decoration: none;
     border: 3px solid var(--accent);
     border-radius: 10px;
-    transition: 0.2s ease;
     font-weight: 600;
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .btn:active {
@@ -552,9 +556,11 @@ section header h2 {
 }
 
 .btn:hover {
-    background: var(--accent-50);
     border: 3px solid var(--accent);
-    color: var(--accent);
+
+    box-shadow:
+        0 0 0 6px var(--accent-50);
+
 }
 
 /* TESTIMONIALS - testimonios */
@@ -606,20 +612,34 @@ section header h2 {
 /*==========*/
 .contact-info {
     display: flex;
-    gap: 5px;
+    gap: 1rem;
 }
 
 .contact {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3px;
-    width: 200px;
-    height: 40px;
+    gap: 1rem;
+
 }
 
 .contact .icon {
     width: 24px;
+}
+
+footer {
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-body {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--bg-header);
 }
 
 
@@ -633,6 +653,175 @@ section header h2 {
 
 /* Media queries para responsividad */
 @media (max-width: 600px) {
+
+    /* HEADER - navegación principal */
+    main {
+        width: 100%;
+        z-index: 3;
+    }
+
+    .header-dev,
+    .code {
+        display: none;
+    }
+
+    .header-ppal,
+    .header-ppal .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .header-ppal {
+        width: fit-content;
+        padding: 1rem;
+        height: fit-content;
+        position: fixed;
+        left: auto;
+        right: 5%;
+        top: 50%;
+        border-radius: 25px;
+        background-color: var(--bg-header);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--border-header);
+        box-shadow: 0 10px 20px var(--shadow);
+    }
+
+    .header-main>div>div {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+    }
+
+    .header-main img {
+        display: block;
+        border-radius: 50%;
+        height: 5rem;
+    }
+
+
+    /* TABS - componente de proyectos en pestaña */
+
+    .tabs .nav-tab .list-tab {
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tabs .nav-tab .list-tab .tab {
+        padding: 3px 2px;
+        color: var(--muted);
+        cursor: pointer;
+    }
+
+    .tabs .nav-tab .list-tab .selected {
+        color: var(--text);
+        font-weight: 500;
+        position: relative;
+    }
+
+    .tabs .nav-tab .list-tab .selected::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--text);
+    }
+
+    .tabs .content-tab {
+        width: fit-content;
+    }
+
+    .tabs .content-tab .project-card {
+        height: fit-content;
+        grid-template-rows: 1fr;
+    }
+
+    .tabs .content-tab .project-card h3 {
+        font-size: 2em;
+    }
+
+    .tabs .content-tab .project-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .tabs .content-tab .project-card .project-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        background: var(--accent-50);
+    }
+
+    .tabs .content-tab .project-card .tags {
+        margin: 12px 0;
+        display: flex;
+        gap: 12px;
+    }
+
+    .tabs .content-tab .project-card .tags span {
+        padding: 3px 10px;
+        border-radius: var(--radius);
+        font-size: small;
+        font-family: var(--unicode);
+        background-color: var(--accent-50);
+        color: var(--text);
+        border: 1px solid var(--accent-50);
+    }
+
+    .tabs .content-tab .project-card p {
+        font-weight: 600;
+    }
+
+    .tabs .content-tab .project-card .project-text .tech {
+        color: var(--muted);
+        margin-top: 12px;
+    }
+
+    .tabs .content-tab .links {
+        display: grid;
+        margin-top: 12px;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .links .button-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: var(--card);
+        border: 2px solid var(--accent);
+        border-radius: 15px;
+        padding: 0.2rem 0;
+        font-size: large;
+        text-decoration: none;
+        color: var(--accent);
+    }
+
+    .links .button-link:first-child {
+        background-color: var(--accent);
+        color: var(--bg);
+    }
+
+    .links a svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+
+
+    /*Timeline*/
+
+
     .timeline::before {
         left: 8px;
     }
@@ -650,7 +839,19 @@ section header h2 {
     .timeline-item::before {
         left: 1px;
     }
+
+    .changelog .footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 1em;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
 }
+
+
 
 @media (max-width: 768px) {
     .testimonial {
