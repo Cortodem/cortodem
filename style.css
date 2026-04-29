@@ -9,7 +9,7 @@
     --border-header: 1px solid rgba(255, 255, 255, 0.2);
     --card: #ffffff;
     --muted: #9aa4b2;
-    --accent: #2563eb;
+    --accent: #2563eb; /* azul limpio */
     --accent-50: rgba(37, 99, 235, 0.08);
     --text: #333;
     --today: #e6f0ff;
@@ -25,8 +25,8 @@
     --border-header: 1px solid rgba(255, 255, 255, 0.04);
     --card: #0f1720;
     --muted: #93a3b5;
-    --accent: #3b82f6;
-    --accent-50: rgba(59, 130, 246, 0.12);
+    --accent: #8b5cf6; /* morado moderno */
+    --accent-50: rgba(139, 92, 246, 0.16);
     --text: #e6eef8;
     --today: #153a66;
     --danger: #ff6b6b;
@@ -37,7 +37,7 @@
     --bg: #f6f8fb;
     --card: #ffffff;
     --muted: #9aa4b2;
-    --accent: #2563eb;
+    --accent: #2563eb; /* azul limpio */
     --accent-50: rgba(37, 99, 235, 0.08);
     --text: #333;
     --today: #e6f0ff;
@@ -84,6 +84,7 @@ main {
     z-index: 3;
 }
 
+
 .header-ppal,
 .header-dev,
 .header-main {
@@ -128,6 +129,7 @@ main {
 main {
     padding: 85px;
     margin: 15px auto 0px;
+    backdrop-filter: blur(1px);
 }
 
 main>section {
