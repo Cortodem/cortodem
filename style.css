@@ -589,135 +589,31 @@ section header h2 {
     background-color: #10b981;
 }
 
-/* FORMULARIO */
-.af-form {
-    background: var(--bg);
-    padding: 30px;
-    border-radius: calc(var(--radius) + 2px);
-    box-shadow: 0 6px 28px var(--shadow);
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    color: #0f172a;
-    margin: 0 auto;
-}
-
-.af-fieldset {
-    border: 0;
-    padding: 0;
-    margin: 0;
+/*==========*/
+/* CONTACTO */
+/*==========*/
+.contact-info {
     display: flex;
-    flex-direction: column;
-    gap: var(--gap);
+    gap: 5px;
 }
 
-.af-legend {
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin-bottom: 4px;
-    color: var(--text);
-}
-
-.af-label {
-    display: block;
-    font-size: 0.95rem;
-}
-
-.af-label-text {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: var(--text);
-}
-
-.div-input {
-    display: block;
-    position: relative;
-}
-
-.af-input,
-.af-textarea {
-    width: 100%;
-    padding: 12px 14px;
-    background: var(--accent-50);
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    border-radius: 8px;
-    font-size: 0.95rem;
-    color: var(--text);
-    box-sizing: border-box;
-    transition: box-shadow .18s ease, border-color .18s ease, transform .08s ease;
-}
-
-.af-textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.af-input::placeholder,
-.af-textarea::placeholder {
-    color: #9aa3b2;
-    font-weight: 500;
-}
-
-.af-input:focus,
-.af-textarea:focus {
-    outline: none;
-    border-color: var(--accent);
-    box-shadow: 0 6px 18px var(--shadow);
-    transform: translateY(-1px);
-}
-
-.af-help {
-    display: block;
-    margin-top: 8px;
-    font-size: 0.85rem;
-    color: var(--muted);
-}
-
-.af-error {
-    display: none;
-    margin-top: 8px;
-    font-size: 0.88rem;
-    color: var(--error);
-}
-
-/* Error state helper classes — añade .is-error a .div-input para activar */
-.div-input.is-error .af-input,
-.div-input.is-error .af-textarea {
-    border-color: var(--error);
-    box-shadow: 0 6px 18px var(--shadow);
-}
-
-.div-input.is-error .af-error {
-    display: block;
-}
-
-/* Actions */
-.af-actions {
+.contact {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 6px;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    width: 200px;
+    height: 40px;
+}
+
+.contact .icon {
+    width: 24px;
 }
 
 
 
-/* Small screens */
-@media (max-width:560px) {
-    :root {
-        --width: 100%;
-    }
 
-    .af-form {
-        padding: 14px;
-        border-radius: 12px;
-    }
 
-    .af-actions {
-        justify-content: stretch;
-    }
-
-    .btn {
-        width: 100%;
-    }
-}
 
 /* ==================== */
 /* UTILIDADES / MEDIA QUERIES */
