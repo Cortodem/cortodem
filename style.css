@@ -56,7 +56,9 @@
     margin: 0;
     padding: 0;
 }
-
+.header-main img{
+    display:none;
+}
 /* Estilos base del body */
 body {
     background-color: var(--bg);
