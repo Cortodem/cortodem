@@ -170,10 +170,18 @@ themeBtn.addEventListener('click', () => {
         document.documentElement.dataset.theme = 'light';
         localStorage.setItem('theme', 'light');
 
-    }else if (currentTheme === 'light') {
+    } else if (currentTheme === 'light') {
         document.documentElement.dataset.theme = 'dark';
         localStorage.setItem('theme', 'dark');
 
     }
     themeBtn.setAttribute('aria-pressed', currentTheme != 'dark');
+});
+
+//////////////////////////////////
+/* --- Desplegar menú móvil --- */
+//////////////////////////////////
+document.getElementById('menu-mobile').addEventListener('click', () => {
+    document.querySelector('.navbar').classList.toggle('hidden');
+    document.querySelector('#theme-toggle').classList.toggle('hidden');
 });

@@ -18,7 +18,8 @@
             <img src="recursos/images/foto.jpg" alt="El desarrollador Fernando mirando a cámara">
             <span class="namedev">Fernando González</span>
         </section>
-        <nav class="navbar" aria-label="Navegación principal">
+
+        <nav class="navbar hidden" aria-label="Navegación principal">
             <a class="nav-link" href="#">
                 Inicio
                 <span class="tooltip scale-in">Vuelve al inicio de todo</span>
@@ -40,14 +41,23 @@
                 <span class="tooltip scale-in">Háblame y te hablo</span>
             </a>
         </nav>
-        <button id="theme-toggle" aria-pressed="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
-                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon-2">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M16.418 4.157a8 8 0 0 0 0 15.686" />
-                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-            </svg>
-        </button>
+            <button id="theme-toggle" class="hidden" aria-pressed="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-moon-2">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M16.418 4.157a8 8 0 0 0 0 15.686" />
+                    <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                </svg>
+            </button>
+            <button id="menu-mobile" class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                    class="icon icon-tabler icons-tabler-filled icon-tabler-plus">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M12 4a1 1 0 0 1 1 1v6h6a1 1 0 0 1 0 2h-6v6a1 1 0 0 1 -2 0v-6h-6a1 1 0 0 1 0 -2h6v-6a1 1 0 0 1 1 -1" />
+                </svg>
+            </button>
     </header>
     <main>
         <header id="home" class="header-main">
