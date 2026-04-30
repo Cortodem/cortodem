@@ -684,6 +684,7 @@ footer {
 
     .header-ppal {
         width: fit-content;
+        gap: 0;
         padding: 1rem;
         height: fit-content;
         position: fixed;
@@ -695,7 +696,6 @@ footer {
 
     .header-ppal .hidden {
         margin: 0;
-        gap: 0;
         height: 0;
         width: 0;
         padding: 0;
