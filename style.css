@@ -55,6 +55,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 0.7s ease;
 }
 
 /* Estilos base del body */
@@ -681,7 +682,6 @@ footer {
         flex-direction: column;
         gap: 1em;
         align-items: center;
-        transition: all 0.7s ease;
     }
 
     .header-ppal {
@@ -701,6 +701,7 @@ footer {
         height: 0;
         width: 0;
         padding: 0;
+        pointer-events: none;
         overflow: hidden;
     }
 
@@ -708,9 +709,6 @@ footer {
         display: block;
     }
 
-    #menu-mobile>svg {
-        transition: all 0.7s ease;
-    }
 
     .rZ45 {
         transform: rotateZ(45deg);
@@ -887,7 +885,6 @@ button[aria-pressed="true"] {
     height: 40px;
     width: 40px;
     cursor: pointer;
-    transition: all 0.7s ease;
 }
 
 button[aria-pressed="false"] {
@@ -899,5 +896,4 @@ button[aria-pressed="false"] {
     height: 40px;
     width: 40px;
     cursor: pointer;
-    transition: all 0.7s ease;
 }

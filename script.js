@@ -183,5 +183,8 @@ themeBtn.addEventListener('click', () => {
 document.getElementById('menu-mobile').addEventListener('click', () => {
     document.querySelector('.navbar').classList.toggle('hidden');
     document.querySelector('#theme-toggle').classList.toggle('hidden');
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.toggle('hidden');
+    });
     document.querySelector('#menu-mobile>svg').classList.toggle('rZ45');
 });
