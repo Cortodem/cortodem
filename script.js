@@ -164,7 +164,7 @@ const themeBtn = document.getElementById('theme-toggle');
 themeBtn.setAttribute('aria-pressed', document.documentElement.dataset.theme === 'dark');
 themeBtn.addEventListener('click', () => {
     let currentTheme = document.documentElement.dataset.theme;
-    
+
     if (currentTheme === 'dark') {
         document.documentElement.dataset.theme = 'light';
         localStorage.setItem('theme', 'light');
